@@ -1,0 +1,13 @@
+.navbar  {
+    img {
+        width: auto;
+        height: 100px;
+    }
+}
+
+.navlink {
+    &:hover {
+        color: rgba(255,255,255,0.7) !important;
+    }
+    color: white !important;
+}

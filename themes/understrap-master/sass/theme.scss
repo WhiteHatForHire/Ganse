@@ -10,3 +10,9 @@
 // Any additional imported files //
 @import "theme/theme";  // <--------- That's where you can add your own design. Thats your part!
 @import "theme/contact-form7"; // Contact Form 7 - Bootstrap 4 support
+
+// My styles
+@import "custom/footer.scss";
+@import "custom/menu.scss";
+@import "custom/home-page.scss";
+@import "custom/globals.scss";
