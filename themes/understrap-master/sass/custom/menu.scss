@@ -1,3 +1,9 @@
+.nav-absolute {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .navbar  {
     img {
         width: auto;
@@ -5,9 +11,36 @@
     }
 }
 
-.navlink {
-    &:hover {
-        color: rgba(255,255,255,0.7) !important;
+.menu-item {
+    a {
+        padding: 30px 12px !important;
+        color: rgba(255,255,255,0.9);
+        
     }
-    color: white !important;
+    font-size: 20px !important;
+}
+
+.sticky-nav {
+    margin-top: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .show-mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .show-mobile {
+        height: 100%;
+        width: auto;
+        
+    }
+    .nav-absolute {
+        display: none;
+    }
+    .sticky-nav {
+
+        margin-top: 0px;
+    }
 }

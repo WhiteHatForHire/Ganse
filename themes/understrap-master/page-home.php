@@ -3,45 +3,95 @@
  * Template Name: Home Page
  */
 
-get_header();
-
-$container   = get_theme_mod( 'understrap_container_type' );
+get_header('home2');
 
 ?>
+<div class="landing-jumbotron">
+<?php get_header('home'); ?>
 
-<div class="wrapper" id="page-wrapper">
-<h1>HOME</h1>
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+</div>
 
-		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<main class="site-main" id="main">
+<div class="easy-for-you-section container">
+	<div class="easy-for-you-text">
+		<h1>We make it easy for you!</h1>
+		<h3 class="">After ten years working in real estate at other brokerages, I knew that buyers and sellers wanted a better real estate experience.</h3>
+		<hr>
+	</div>
+</div>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+<h1 class="margin-bottom-sm text-center clearfix">Lancaster Properties</h1>
 
-					<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+<!-- featured properties section -->
+<section class="theme-blue-background-solid">
+	<div class="properties-feature-landing container theme-blue-background-solid">
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Columbia Borough School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
 
-					<?php
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					?>
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Conestoga Valley School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
 
-				<?php endwhile; // end of the loop. ?>
+		<div class="row property-slider">
+			<div class="col-md-2"><h2>Donegal School Dist</h2></div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-3">
+				<div class="filler-box"></div>
+			</div>
+			<div class="col-md-1">
+				<div class="filler-box"><i class="fa fa-arrow-right"></i></div>
+			</div>
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end feature properties section-->
 
-			</main><!-- #main -->
+<section class="landing-team-intro flex-container-vertical" data-parallax="scroll"data-bleed="8" data-speed="0.3" data-image-src="/wp-content/uploads/2018/07/office-interior-placeholder.jpg">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-4 theme-light-gray-background">
+				<div class="col-inner-wrapper">
+					<h1>Jeremy Ganse Team</h1>
+					<h4>So, what is an Exceptional Client Experience? It's the sincere belief by 
+					a client that we (first) intentionally focus on listening and understanding
+					their needs, and then (second) deliver on those needs with a high degree of 
+					competence and respect.</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-		<!-- Do the right sidebar check -->
-		<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
 
-	</div><!-- .row -->
-
-</div><!-- Container end -->
-
-</div><!-- Wrapper end -->
 
 <?php get_footer(); ?>
