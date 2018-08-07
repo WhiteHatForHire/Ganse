@@ -1,0 +1,41 @@
+/*===== FOOTER =====*/
+
+.theme-blue-background-solid {
+    background-color: #27333F;
+}
+
+.footer-copyright {
+    margin-top: -6px;
+    color: white;
+    background: rgb(30,45,60);
+    padding: 8px 0;
+    border-top: 1px solid black;
+}
+
+#footer-address {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+#footer-socials {
+    margin-top: 50px;
+    min-height: 40px;
+    font-size: 36px;
+}
+
+/*SOCIAL COLORS*/
+#footer-socials .fa-facebook-official { color: #3b5998; }
+#footer-socials .fa-twitter { color: #1da1f2; }
+#footer-socials .fa-youtube { color: #ff0000; }
+#footer-socials .fa-google-plus-official { color: #db4437; }
+#footer-socials .fa-envelope { color: #128c7e; }
+
+#footer-socials .fa:hover {
+    color: white;
+}
+
+#footer-socials a {
+    float: left;
+    padding: 0px 10px;
+}
